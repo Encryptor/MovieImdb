@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivMoviePoster"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Movie Title: "
+        android:textColor="@android:color/black"
+        app:layout_constraintRight_toLeftOf="@id/tvMovieTitle"
+        app:layout_constraintTop_toBottomOf="@+id/ivMoviePoster"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMoviePoster"
+        app:layout_constraintLeft_toRightOf="@id/lblMovieTitle" />
+
+    <TextView
+        android:id="@+id/lblMovieAvgVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Average Vote: "
+        android:textColor="@android:color/black"
+        app:layout_constraintRight_toLeftOf="@id/tvMovieAvgVote"
+        app:layout_constraintTop_toBottomOf="@+id/lblMovieTitle"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMovieAvgVote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="Average Vote"
+        android:textColor="@android:color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+        app:layout_constraintLeft_toRightOf="@id/lblMovieAvgVote"/>
+
+    <TextView
+        android:id="@+id/lblMovieOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="Movie Overview: "
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/tvMovieOverview"
+        app:layout_constraintTop_toBottomOf="@+id/lblMovieAvgVote"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMovieOverview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Movie Overview"
+        android:textColor="@android:color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieAvgVote"
+        app:layout_constraintLeft_toRightOf="@id/lblMovieOverview" />
+
+    <EditText
+        android:id="@+id/edRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Add your Rating here"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieOverview"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edRating"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
