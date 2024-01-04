@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.canopytax.interview"
+    namespace = "com.imdbmovie.info"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.canopytax.interview"
+        applicationId = "com.imdbmovie.info"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

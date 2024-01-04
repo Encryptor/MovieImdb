@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/popularMoviesFragment"
-        android:name="com.canopytax.interview.ui.fragment.PopularMoviesFragment"
+        android:name="com.imdbmovie.info.ui.fragment.PopularMoviesFragment"
         android:label="PopularMoviesFragment" >
         <action
             android:id="@+id/action_popularMoviesFragment_to_movieDetailFragment"
@@ -15,10 +15,10 @@
     </fragment>
     <fragment
         android:id="@+id/movieDetailFragment"
-        android:name="com.canopytax.interview.ui.fragment.MovieDetailFragment"
+        android:name="com.imdbmovie.info.ui.fragment.MovieDetailFragment"
         android:label="MovieDetailFragment" >
         <argument
             android:name="movie"
-            app:argType="com.canopytax.interview.Results" />
+            app:argType="com.imdbmovie.info.Results" />
     </fragment>
 </navigation>
